@@ -7,6 +7,11 @@
 html {
   font-family: sans-serif;
   font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .header {
@@ -15,14 +20,14 @@ html {
   font-weight: 600;
 }
 
-.Main-nav-link a {
+.main-nav-link a {
   color: #fff;
   text-decoration: none;
   padding: 0.6rem;
 }
 
-.Main-nav-link a:active,
-.Main-nav-link a:hover {
+.main-nav-link a:active,
+.main-nav-link a:hover {
   color: yellow;
   border: 1px solid rgb(255, 115, 0);
 }
@@ -54,8 +59,14 @@ input::placeholder {
   text-align: center;
 }
 
-.Main-nav-list {
+.main-nav-list {
   display: flex;
   gap: 2rem;
   list-style-type: none;
+}
+
+@media (max-width: 587px) {
+  .main-nav-list {
+    display: none;
+  }
 }

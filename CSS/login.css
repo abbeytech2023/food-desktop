@@ -11,7 +11,7 @@
 }
 
 .login-header {
-  font-size: 5rem;
+  font-size: 4rem;
   margin-bottom: 4rem;
 }
 
@@ -125,4 +125,62 @@ form input:focus:invalid {
 .btn-sign-up:hover a {
   color: #fff;
   font-size: 1.6rem;
+}
+
+/* ***************   Media querry  ************************* */
+
+@media (max-width: 950px) {
+  .login-header {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 836px) {
+  .new-user-container {
+    text-align: center;
+  }
+}
+
+@media (max-width: 587px) {
+  .main-nav-list {
+    display: none;
+  }
+
+  .new-user {
+    position: absolute;
+    display: none;
+  }
+  .login-page {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 442px) {
+  .login-header {
+    font-size: 2rem;
+  }
+
+  .label {
+    font-size: 1.6rem;
+  }
+
+  form {
+    font-size: 2.2rem;
+    width: 60%;
+  }
+
+  .login {
+    margin-left: 10rem;
+  }
+
+  .btn-login {
+    padding: 0.5rem 4rem;
+  }
+}
+
+@media (max-width: 381px) {
+  .login {
+    margin-left: 13rem;
+  }
 }
