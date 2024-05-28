@@ -1,0 +1,74 @@
+@media (max-width: 975px) {
+  html {
+    font-size: 56.5%;
+  }
+}
+
+@media (max-width: 704px) {
+  html {
+    font-size: 52.5%;
+  }
+  .login-header {
+    text-align: center;
+  }
+}
+
+@media (max-width: 440px) {
+  body {
+    max-width: 500px;
+    /* padding-left: 8rem; */
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    justify-content: center;
+    align-content: center;
+
+    /* background-color: brown; */
+    position: relative;
+  }
+
+  .Main-nav-list {
+    display: none;
+  }
+
+  form {
+    /* margin-top: 6rem; */
+    padding: 4rem;
+    background-color: rgba(108, 106, 100, 0.265);
+    /* margin: 0 auto; */
+  }
+
+  .login-header {
+    /* margin-top: 15rem; */
+  }
+
+  .login-container {
+    display: grid;
+    grid-template-rows: 70px 1fr;
+    /* background-color: red; */
+    align-self: center;
+    justify-self: center;
+  }
+
+  .form-box input {
+    width: 25rem;
+  }
+
+  .btn-login {
+    padding: 1rem 5rem;
+  }
+
+  .new-user {
+    position: absolute;
+    display: none;
+  }
+}
+
+@media (max-width: 377px) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    padding: 3rem auto;
+  }
+}

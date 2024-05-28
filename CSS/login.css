@@ -1,0 +1,128 @@
+.login-page {
+  /* padding-top: 4rem; */
+  display: flex;
+  height: 50rem;
+  /* color: #fff; */
+}
+
+.label {
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+
+.login-header {
+  font-size: 5rem;
+  margin-bottom: 4rem;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 70%;
+  /* background-color: blue; */
+  color: #000;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.form-box input {
+  height: 4rem;
+  width: 34rem;
+  border: none;
+  padding: 2rem;
+  background-color: rgb(194, 169, 147);
+  border-radius: 2rem;
+}
+
+form {
+  text-align: start;
+  font-size: 2.8rem;
+}
+
+form input:focus {
+  outline: none;
+  border-bottom: 3px solid #55c57a;
+}
+form input:focus:invalid {
+  border-bottom: 3px solid #ff7730;
+}
+
+.btn-login {
+  /* display: block; */
+  border: none;
+  font-size: 2.2rem;
+  padding: 1rem 7rem;
+  background-color: rgb(255, 115, 0);
+  color: #fff;
+  border-radius: 1.5rem;
+}
+
+/* ******************************************************/
+/* **********************   NEW USER    *****************/
+/* ******************************************************/
+
+.new-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 25%;
+  /* background-image: url(IMAGES/test1.webp); */
+  background-image: url(../IMAGES/Login-picture/test3.jpeg),
+    linear-gradient(to right, rgb(255, 115, 0), rgb(255, 115, 0));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-color: rgb(255, 115, 0); */
+  color: #fff;
+}
+
+.new-user-container {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.secondary-header {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.new-user-text {
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+.btn-sign-up {
+  display: inline-block;
+  border: none;
+  padding: 1rem 3rem;
+
+  border-radius: 1.5rem;
+}
+
+.btn-sign-up:active,
+.btn-sign-up:hover {
+  background-color: #000;
+}
+
+.btn-sign-up a {
+  color: #000;
+  font-size: 1.6rem;
+}
+
+.btn-sign-up:hover a {
+  color: #fff;
+  font-size: 1.6rem;
+}
