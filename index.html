@@ -13,14 +13,26 @@
         <div class="logo">TOP<span>FOODS</span></div>
         <ul class="main-nav-list">
           <!-- <li class="Main-nav-link"><a href="">Home</a></li> -->
-          <li class="Main-nav-link">
-            <a href="registration.html" id="#join-us">Register</a>
+          <li class="main-nav-link">
+            <a href="registration.html">Register</a>
           </li>
-          <li class="Main-nav-link"><a href="index.html" id="">Login</a></li>
+          <li class="main-nav-link"><a href="login.html" id="">Login</a></li>
 
-          <li class="Main-nav-link"><a href="aboutUs.html">About Us</a></li>
-          <li class="Main-nav-link"><a href="contactUs.html">Contact Us</a></li>
+          <li class="main-nav-link"><a href="aboutUs.html">About Us</a></li>
+          <li class="main-nav-link"><a href="profile.html">profile</a></li>
         </ul>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="40px"
+          viewBox="0 -960 960 960"
+          width="40px"
+          fill="#5f6368"
+          class="menu-icon"
+        >
+          <path
+            d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"
+          />
+        </svg>
       </nav>
     </div>
     <div class="section-hero">
@@ -160,3 +172,12 @@
     </section>
   </body>
 </html>
+
+<script>
+  const menuIcon = document.querySelector(".menu-icon");
+
+  menuIcon.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("success");
+  });
+</script>

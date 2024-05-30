@@ -120,7 +120,7 @@ form div:last-child {
 
 .btn-reg {
   padding: 1rem 7rem;
-  background-color: rgb(255, 115, 0);
+  /* background-color: rgb(255, 115, 0); */
   background-color: #000;
   border-radius: 2rem;
   border: none;
