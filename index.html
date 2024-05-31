@@ -8,50 +8,71 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="header">
-      <nav class="navigation">
-        <div class="logo">TOP<span>FOODS</span></div>
-        <ul class="main-nav-list">
-          <!-- <li class="Main-nav-link"><a href="">Home</a></li> -->
-          <li class="main-nav-link">
-            <a href="registration.html">Register</a>
-          </li>
-          <li class="main-nav-link"><a href="login.html" id="">Login</a></li>
+    <header>
+      <div class="header">
+        <nav class="navigation">
+          <div class="logo">TOP<span>FOODS</span></div>
+          <div class="main-nav">
+            <ul class="main-nav-list">
+              <!-- <li class="Main-nav-link"><a href="">Home</a></li> -->
+              <li class="main-nav-link">
+                <a href="registration.html">Register</a>
+              </li>
+              <li class="main-nav-link">
+                <a href="login.html" id="">Login</a>
+              </li>
 
-          <li class="main-nav-link"><a href="aboutUs.html">About Us</a></li>
-          <li class="main-nav-link"><a href="profile.html">profile</a></li>
-        </ul>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="40px"
-          viewBox="0 -960 960 960"
-          width="40px"
-          fill="#5f6368"
-          class="menu-icon"
-        >
-          <path
-            d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"
-          />
-        </svg>
-      </nav>
-    </div>
-    <div class="section-hero">
-      <div class="hero-container">
-        <h2>
-          <span>connect</span> with retail provision stores in your enviroment
-        </h2>
-        <p class="hero-text">
-          Hunter is your all-in-one email outreach platform. Find and connect
-          with the people that matter to your business.
-        </p>
-        <div class="hero-btn">
-          <button class="btn btn-start">
-            <a href="login.html">Get started</a>
+              <li class="main-nav-link"><a href="aboutUs.html">About Us</a></li>
+              <li class="main-nav-link"><a href="profile.html">profile</a></li>
+            </ul>
+          </div>
+          <button class="btn-mobile-nav">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40px"
+              viewBox="0 -960 960 960"
+              width="40px"
+              fill="black"
+              class="btn-close-nav"
+            >
+              <path
+                d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40px"
+              viewBox="0 -960 960 960"
+              width="40px"
+              fill="#fff"
+              class="btn-open-nav"
+            >
+              <path
+                d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"
+              />
+            </svg>
           </button>
-          <button class="btn btn-plans"><a href="">see our plans</a></button>
+        </nav>
+      </div>
+      <div class="section-hero">
+        <div class="hero-container">
+          <h2>
+            <span>connect</span> with retail provision stores in your enviroment
+          </h2>
+          <p class="hero-text">
+            Hunter is your all-in-one email outreach platform. Find and connect
+            with the people that matter to your business.
+          </p>
+          <div class="hero-btn">
+            <button class="btn btn-start">
+              <a href="login.html">Get started</a>
+            </button>
+            <button class="btn btn-plans"><a href="">see our plans</a></button>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
     <section class="container data">
       <div class="data-info">
         <h3 class="heading-secondary">01. Data</h3>
@@ -174,10 +195,13 @@
 </html>
 
 <script>
-  const menuIcon = document.querySelector(".menu-icon");
+  const menuIcon = document.querySelector(".btn-mobile-nav");
+  const navigation = document.querySelector(".navigation");
 
   menuIcon.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log("success");
+
+    navigation.classList.toggle("nav-open");
+    // menuIcon.style.display = "none";
   });
 </script>

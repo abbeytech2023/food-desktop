@@ -38,7 +38,7 @@ li:first-child {
   position: fixed;
   left: 0;
   right: 0;
-  z-index: 99;
+  /* z-index: 99; */
 }
 
 nav ul {
@@ -300,10 +300,6 @@ nav ul {
 
   .hero-text {
     font-size: 1.8rem;
-  }
-
-  .main-nav-list {
-    display: none;
   }
 
   .data-info h2 {
