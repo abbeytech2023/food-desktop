@@ -11,16 +11,46 @@
     <div class="header">
       <nav class="navigation">
         <div class="logo">TOP<span>FOODS</span></div>
-        <ul class="main-nav-list">
-          <li class="main-nav-link"><a href="index.html">Home</a></li>
-          <li class="main-nav-link">
-            <a href="registration.html" id="#join-us">Register</a>
-          </li>
-          <li class="main-nav-link"><a href="login.html" id="">Login</a></li>
 
-          <!-- <li class="Main-nav-link"><a href="">About Us</a></li> -->
-          <li class="main-nav-link"><a href="">Contact Us</a></li>
-        </ul>
+        <div class="main-nav">
+          <ul class="main-nav-list">
+            <li class="main-nav-link"><a href="index.html">Home</a></li>
+            <li class="main-nav-link">
+              <a href="registration.html" id="#join-us">Register</a>
+            </li>
+            <li class="main-nav-link"><a href="login.html" id="">Login</a></li>
+
+            <!-- <li class="Main-nav-link"><a href="">About Us</a></li> -->
+            <li class="main-nav-link"><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <button class="btn-mobile-nav">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="40px"
+            viewBox="0 -960 960 960"
+            width="40px"
+            fill="black"
+            class="btn-close-nav"
+          >
+            <path
+              d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="40px"
+            viewBox="0 -960 960 960"
+            width="40px"
+            fill="#fff"
+            class="btn-open-nav"
+          >
+            <path
+              d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"
+            />
+          </svg>
+        </button>
       </nav>
     </div>
     <div class="container">
@@ -37,43 +67,52 @@
         </div>
         <div class="about-me">
           <h2 class="head-greet">Hello</h2>
-          <table>
-            <tr>
-              <th>First-name:</th>
-              <td>Abiodun</td>
-            </tr>
-            <tr>
-              <th>last-name:</th>
-              <td>olanipekun</td>
-            </tr>
-            <tr>
-              <th>email:</th>
-              <td>olanipekunabbey@gmail.com</td>
-            </tr>
-            <tr></tr>
-            <tr>
-              <th>Phone:</th>
-              <td>08162010121</td>
-            </tr>
-            <tr>
-              <th>Residential-address:</th>
-              <td>no 1 oke lantoro elte road abeokuta</td>
-            </tr>
-            <tr>
-              <th>office-address:</th>
-              <td>no 1 oke lantoro elte road abeokuta</td>
-            </tr>
-            <tr>
-              <th>State-of-origin:</th>
-              <td>ogun-state</td>
-            </tr>
-            <tr>
-              <th>LG-Area:</th>
-              <td>Abeokuta-south</td>
-            </tr>
-          </table>
+          <div class="table-container">
+            <table>
+              <tr>
+                <th>First-name:</th>
+                <td>Abiodun</td>
+              </tr>
+              <tr>
+                <th>last-name:</th>
+                <td>olanipekun</td>
+              </tr>
+              <tr>
+                <th>email:</th>
+                <td>olanipekunabbey@gmail.com</td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <th>Phone:</th>
+                <td>08162010121</td>
+              </tr>
+              <tr>
+                <th>Residential-<br />address:</th>
+                <td>
+                  no 1 oke lantoro elte <br />
+                  road abeokuta
+                </td>
+              </tr>
+              <tr>
+                <th>office-address:</th>
+                <td>
+                  no 1 oke lantoro elte <br />
+                  road abeokuta
+                </td>
+              </tr>
+              <tr>
+                <th>State-of-origin:</th>
+                <td>ogun-state</td>
+              </tr>
+              <tr>
+                <th>LG-Area:</th>
+                <td>Abeokuta-south</td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
     </div>
+    <script src="./JavaScript/mobileNav.js"></script>
   </body>
 </html>

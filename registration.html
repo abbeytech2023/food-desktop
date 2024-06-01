@@ -11,14 +11,45 @@
     <div class="header">
       <nav class="navigation">
         <div class="logo">DREAL<span>FOODS</span></div>
-        <ul class="main-nav-list">
-          <li class="main-nav-link"><a href="index.html">Home</a></li>
-          <li class="main-nav-link">
-            <a href="login.html">Login</a>
-          </li>
-          <li class="main-nav-link"><a href="aboutUs.html">About Us</a></li>
-          <li class="main-nav-link"><a href="contactUs.html">Contact Us</a></li>
-        </ul>
+        <div class="main-nav">
+          <ul class="main-nav-list">
+            <li class="main-nav-link"><a href="index.html">Home</a></li>
+            <li class="main-nav-link">
+              <a href="login.html">Login</a>
+            </li>
+            <li class="main-nav-link"><a href="aboutUs.html">About Us</a></li>
+            <li class="main-nav-link">
+              <a href="contactUs.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn-mobile-nav">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="40px"
+            viewBox="0 -960 960 960"
+            width="40px"
+            fill="black"
+            class="btn-close-nav"
+          >
+            <path
+              d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="40px"
+            viewBox="0 -960 960 960"
+            width="40px"
+            fill="#fff"
+            class="btn-open-nav"
+          >
+            <path
+              d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"
+            />
+          </svg>
+        </button>
       </nav>
     </div>
     <div class="registration-page">
@@ -96,5 +127,6 @@
         </form>
       </div>
     </div>
+    <script src="./JavaScript/mobileNav.js"></script>
   </body>
 </html>

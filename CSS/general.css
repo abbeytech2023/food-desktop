@@ -18,6 +18,11 @@ header {
   position: relative;
 }
 
+.main-nav-list {
+  display: flex;
+  list-style-type: none;
+}
+
 .header {
   background-color: rgb(226, 170, 15);
   background-color: #000;
