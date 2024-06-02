@@ -1,23 +1,17 @@
 .container {
-  max-width: 120rem;
-  height: 80rem;
+  max-width: 100%;
+  /* height: 80rem; */
   display: flex;
   justify-content: center;
 }
 
 .profile-cart {
   max-width: 120rem;
-  /* height: 50rem; */
   display: flex;
   justify-content: center;
   /* align-items: center; */
   gap: 3rem;
   /* padding: 5rem 8rem 7rem 4rem; */
-}
-
-.details-box {
-  display: flex;
-  gap: 3.7rem;
 }
 
 .photo-box {
@@ -68,138 +62,29 @@
   padding-bottom: 2rem;
 }
 
-table {
-  max-width: 70%;
-}
-
-tr,
-td,
-th {
-  /* border: 1px solid black; */
-}
-
-th {
-  text-align: left;
-  max-width: 28rem;
-  height: 5rem;
-}
-
-@media (max-width: 1075px) {
-  .container {
-    max-width: 1075rem;
+@media (max-width: 799px) {
+  .about-me {
+    font-size: 2.1rem;
   }
-  /* .profile-cart {
-    font-size: 2.4rem;
-    padding-left: 20rem;
-  } */
+}
 
-  th,
-  td {
-    font-size: 2rem;
-  }
-
+@media (max-width: 602px) {
   .profile-cart {
-    gap: 4rem;
+    gap: 0;
+  }
+}
+
+@media (max-width: 542px) {
+  .profile-cart {
+    flex-direction: column;
   }
 
   .about-me {
-    gap: 2.5rem;
-  }
-}
-
-@media (max-width: 868px) {
-  .container {
-    max-width: 860rem;
-  }
-
-  .profile-cart {
-    /* padding-left: 15rem; */
-    padding-bottom: 50rem;
-  }
-
-  th {
-    width: 20rem;
+    font-size: 1.8rem;
   }
 
   .description {
-    position: absolute;
     display: none;
-  }
-
-  .about-me {
-    padding-left: 20rem;
-    font-size: 1.8rem;
-    /* padding-top: 25rem; */
-  }
-
-  .profile-cart {
-    flex-direction: column;
-    padding-top: 42rem;
-    height: 0;
-    align-items: center;
-  }
-
-  .table-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .photo-box {
-    flex-direction: row;
-    gap: 0;
-    padding-left: 0;
-  }
-}
-
-@media (max-width: 685px) {
-  .container {
-    max-width: 685rem;
-  }
-
-  .profile-cart {
-  }
-
-  th {
-    width: 5rem;
-  }
-
-  .about-me {
-    max-width: 40rem;
-    padding-left: 15rem;
-    padding-right: 6rem;
-  }
-}
-
-@media (max-width: 501px) {
-  .container {
-    max-width: 51rem;
-  }
-
-  .profile-cart {
-    align-items: center;
-  }
-
-  .about-me {
-    max-width: 30rem;
-    font-size: 1.6rem;
-  }
-
-  .table-container {
-    margin-right: 9rem;
-    font-size: 1.6rem;
-  }
-  td {
-    height: 5rem;
-  }
-}
-
-@media (max-width: 424px) {
-  /* .about-me {
-    padding-left: 3rem;
-  } */
-
-  .about-me {
-    font-size: 1.3rem;
+    position: absolute;
   }
 }
