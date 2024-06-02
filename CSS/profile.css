@@ -3,6 +3,7 @@
   /* height: 80rem; */
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .profile-cart {
@@ -11,6 +12,7 @@
   justify-content: center;
   /* align-items: center; */
   gap: 3rem;
+  margin-top: 8rem;
   /* padding: 5rem 8rem 7rem 4rem; */
 }
 
@@ -51,7 +53,6 @@
 .description {
   margin-top: 4rem;
   font-size: 2.1rem;
-  padding: 3rem;
 }
 
 .about-me {
@@ -72,6 +73,17 @@
   .profile-cart {
     gap: 0;
   }
+  .photo-box {
+    justify-content: center;
+  }
+
+  .prof-img img {
+    width: 70%;
+  }
+
+  .prof-img {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 542px) {
@@ -86,5 +98,15 @@
   .description {
     display: none;
     position: absolute;
+  }
+}
+
+@media (max-width: 300px) {
+  .prof-img img {
+    width: 50%;
+  }
+
+  .about-me {
+    font-size: 1.6rem;
   }
 }
