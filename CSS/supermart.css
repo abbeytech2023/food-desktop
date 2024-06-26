@@ -119,19 +119,12 @@ input::placeholder {
   align-items: center;
 }
 
-.cart-list-box {
-  margin: 0 auto;
-
-  width: 125rem;
-  padding: 0 5rem;
-  position: relative;
-}
-
 .icon-left {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translate(0, -50%);
+  /* z-index: 99; */
 }
 
 .icon-right {
@@ -179,14 +172,44 @@ input::placeholder {
 
 .ing-heading {
   margin-top: 2rem;
+  margin-left: 16%;
   margin-bottom: 1rem;
+  margin-top: 2rem;
   font-size: 2.6rem;
 }
+
+/* .btn {
+  border: 1px solid yellow;
+  background-color: yellow;
+  color: #fff;
+  height: 20px;
+  width: 20px;
+} */
 
 .ingredients {
   padding-top: 20rem;
 }
 
-.img-details {
-  /* margin-top: 10%; */
+.slider-container {
+  position: relative;
+}
+
+.slider {
+  margin: 0 auto;
+
+  width: 125rem;
+  padding-top: 5rem;
+  max-width: 120rem;
+  height: 45rem;
+  /* background-color: red; */
+  /* transform: scale(0.5); */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 10%;
+  /* left: ; */
+  width: 100%;
+  transition: all 1s;
 }
