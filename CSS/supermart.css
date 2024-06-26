@@ -124,7 +124,7 @@ input::placeholder {
   top: 50%;
   left: 0;
   transform: translate(0, -50%);
-  /* z-index: 99; */
+  z-index: 90;
 }
 
 .icon-right {
@@ -132,6 +132,7 @@ input::placeholder {
   top: 50%;
   right: 0;
   transform: translate(0, -50%);
+  z-index: 90;
 }
 
 .carts-list {
